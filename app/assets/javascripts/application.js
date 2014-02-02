@@ -12,8 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore.min.js
+//= require backbone.min.js
 //= require turbolinks
 //= require_tree .
 $(function(){
-	todos.makeIt();
+	// todos.makeIt();
+	router = new Router();
+	Backbone.history.start();
 })

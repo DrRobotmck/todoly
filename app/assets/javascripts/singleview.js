@@ -1,0 +1,1 @@
+singleview.js
