@@ -6,17 +6,18 @@
 		<input type="button" id="todo-button" value="Add to list"> -->
 	</div>
 	<div class="todos-div">
-		<ol id="todos"><h1>Todos</h1></ol>
+		<ol id="todos"></ol>
 	</div>
-	<div class="done-div">
-		<ol id="done"><h1>Completed</h1></ol>
+	<div class="done-div hide">
+		<ol id="done"></ol>
 	</div>
 
 </div>
 <script type="text/html" id="add">
 	<input type="text" name="todo-value" id="todo-entry">
 		<input type="button" id="todo-button" value="Add to list">
+		<input type="button" id="completed" value= "Completed">
 </script>
 <script type="text/html" id="todo">
-	<li class="todoly"><%%= todo %><input type="checkbox" class="checkbox"value="" id="<%%= id %>"></li>
+	<span class="todoly"><%%= todo %></span><input type="checkbox" class="checkbox" <%%= incomplete ? '' : 'checked' %> id="<%%= id %>"><span class="delete">x</span>
 </script>
